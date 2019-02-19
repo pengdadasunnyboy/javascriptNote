@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="box1">
+			<div>box1的div</div>
+		</div>
+		
+		<div class="box1">
+			<div>box1的div</div>
+		</div>
+		
+		<div class="box1">
+			<div>box1的div</div>
+		</div>
+		<div class="box1">
+			<div>box1的div</div>
+		</div>
+		
+		<script>
+			/*
+			 * document.querySelector()
+			 * -需要一个选择器的字符串作为参数，可以根据一个css选择器来查询一个元素节点
+			 */
+			var div = document.querySelector(".box1 div");
+			console.log(div.innerHTML);
+			
+			var box1 = document.querySelectorAll(".box1");
+			console.log(box1.length);//4
+		</script>
+	</body>
+</html>

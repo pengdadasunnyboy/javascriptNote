@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			/*var a = 123;
+			function fun(){
+				alert(a);
+			}
+			fun();//alert(123);
+			
+			var b = 123;
+			function fun1(){
+				alert(b);
+				var b = 456;
+			}
+			fun1();//undefined
+			
+			var c = 123;
+			function fun2(){
+				alert(c);
+				var c = 456;
+			}
+			fun2();//undefined
+			alert(c);//123
+			
+			var d = 123;
+			function fun3(){
+				alert(d);
+				d = 456;
+			}
+			fun3();//123
+			alert(d);//456*/
+			
+			var a = 123;
+			function fun(a){
+				alert(a);
+				a = 456;
+			}
+			fun();//undefined
+			alert(a);//123
+			
+			var b = 123;
+			function fun1(b){
+				alert(b);
+				b = 456;
+			}
+			fun(123);//123
+			alert(a);//123
+		</script>
+	</body>
+</html>

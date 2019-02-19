@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var a = 123;
+			var b = a;
+			a++;
+			console.log("a = " + a);//124
+			console.log("b = " + b);//123  变量之间互不影响
+			
+			var obj = new Object();
+			obj.name = "孙悟空";
+			var obj2 = obj;
+			
+			console.log(obj.name);//孙悟空
+			console.log(obj2.name);//孙悟空
+			obj.name ="猪八戒";
+			console.log(obj.name);//猪八戒
+			console.log(obj2.name);//猪八戒
+		</script>
+	</body>
+</html>

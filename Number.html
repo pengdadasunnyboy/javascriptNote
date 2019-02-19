@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*
+			 * 在js中所有的数值都是number类型
+			 *  包括整数和浮点数
+			 */
+			var a = 123;
+			var b = "123";
+			console.log(a);
+			console.log(b);
+			/*
+			 * 可以使用一个运算符typeof来检查一个变量的数据类型
+			 * 检查字符串是，会返回string
+			 * 检查数值时,会返回Number
+			 */
+			console.log(typeof a);
+			console.log(typeof b);
+			
+			console.log(Number.MAX_VALUE);//JS可以表示数字的最大值
+			var c = Number.MAX_VALUE * Number.MAX_VALUE;//如果使用Number数字超过了最大值就显示Infinity  正无穷    -Infinity 负无穷
+			console.log(c);
+			console.log(typeof c);//返回number
+			//NaN  Not a Number 不是一个数值
+			d = "abc" * "efg";
+			console.log(d);
+			console.log(typeof d);//number
+			
+			x = Number.MIN_VALUE;//大于0de 最小值
+			console.log(x);//5e-324
+			
+			var y = 123 + 456;//数值计算
+			console.log(y);
+			
+			var z = 0.1 + 0.2; 
+			console.log(z);//如果使用js进行浮点数运算，可能得到一个不精准的结果   0.30000000000000004
+			 
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

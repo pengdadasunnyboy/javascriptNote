@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.b1{
+				width: 200px;
+				height: 200px;
+				border: 1px solid red;
+			}
+			.b2{
+				width: 400px;
+				height: 400px;
+				background: yellow;
+			}
+		</style>
+		<script>
+			window.onload = function(){
+				var box = document.getElementById("box");
+				var btn01 = document.getElementById("btn01");
+				
+				btn01.onclick = function(){
+					/*box.style.width = "400px";
+					box.style.height = "400px";*/
+					/*
+					 * 修改box的class的属性
+					 * 浏览器只需要一次渲染就好了
+					 */
+					/*box.className = "b2";*/
+					addClass(box,"b2");
+				}
+			}
+			
+			function addClass(obj , cn){
+				obj.className += " " + cn;
+			}
+		</script>
+	</head>
+	<body>
+		<button id="btn01">点击修改box样式</button>
+		<div id="box" class="b1"></div>
+	</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//创建正则表达式的对象
+			/*
+			 * 语法 var 变量 = new RegExp("正则表达式"，"匹配模式")
+			 * 使用typeof检查正则对象，会返回object
+			 * 检查字符串中是否有a
+			 * 
+			 * 在构造函数中可以
+			 */
+			
+			var reg = new RegExp("a");
+			var str = "da";
+			/*
+			 * 正则表达式的方法：
+			 *   test()
+			 *     -使用这个方法可以用来检查一个字符串是否符合正则表达式的规则
+			 *       如果符合返回true  如果不符合返回false
+			 */
+			var result = reg.test(str);
+			console.log(result);//true
+		</script>
+	</body>
+</html>

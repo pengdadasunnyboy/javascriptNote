@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			//通过for循环来输出图形   这个for循环执行几次高度就是多少 控制高度
+			for(var i = 0; i < 5 ; i++) {
+			     	//在循环内部再创建一个循环，用来控制图形的宽度
+			     	//for外部循环执行一次   内部执行5次
+			     	for (var j = 0; j < 5-i; j++) {
+			     		document.write("*  ");
+			     	}
+			     	//输出换行
+			     	document.write("<br />")
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			for (var i = 100; i < 1000; i++) {
+				//获取百位
+				var bai = parseInt(i/100);
+				//获取十位
+				var shi = parseInt((i - bai*100)/10);
+				//获取个位数
+				var ge = i % 10;
+				
+				//判断i是否是水仙数
+				if((bai*bai*bai + shi*shi*shi + ge*ge*ge) == i){
+					console.log(i);
+				}
+			}
+		</script>
+	</body>
+</html>

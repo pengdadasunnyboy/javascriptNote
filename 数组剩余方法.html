@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var arr = ["孙悟空","猪八戒","沙和尚","唐僧","白骨精"];
+			var arr2 = ["朱元璋","康熙"];
+			var arr3 = ["天帝"];
+			/*
+			 * contact()可以连接两个或者多个数组，并将新的数组返回
+			 * -该方法不对对元素组产生影响
+			 */
+			var result = arr.concat(arr2,arr3,"牛魔王");
+			console.log(result);
+			
+			/*
+			 * join()
+			 * -该方法可以将数组转换为一个字符串
+			 * -该方法不对对元素组产生影响
+			 * -在join()中可以指定一个字符作为参数，这个字符串将会成为元素的连接符
+			 *   如果不指定连接符，则默认作为连接符
+			 */
+			 result = arr.join("-");
+			console.log(result);
+			
+			/*
+			 * reverse()
+			 * -该方法用来反转数组（前边的去后边，后边的去前边）
+			 * -该方法会直接修改原数组
+			 */
+			arr.reverse();
+			console.log(arr);
+			
+			/*
+			 * sort()
+			 * -可以用来对数组中的元素进行排序
+			 * -会影响原数组，会按照Unicode编码进行排序
+			 */
+			var a = ['a','c','y','f'];
+			a.sort();
+			console.log(a);
+			/*
+			 * 纯数字排序会出现问题
+			 *  我们可以在sort（）添加一个回调函数，来指定排序规则
+			 *     回调函数中需要定义两个形参
+			 *     浏览器将会分别使用数组中的元素作为实参去调用回调函数
+			 * -浏览器会根据回调函数来决定元素的顺序
+			 *   如果返回大于0，就会交换位置
+			 *   如果返回小于0，则元素位置不变
+			 *   如果等于0,相等，不交换位置
+			 */
+			var b = [1,2,3,4,9,22,33,44];
+			b.sort(function(a,b){
+				/*if(a>b){
+					return 1;
+				}else if(a<b){
+					return -1;
+				}else{
+					return 0;
+				}*/
+				//升序排列
+				return a - b;
+				//降序  return b-a
+			});
+			console.log(b);
+		</script>
+	</body>
+</html>

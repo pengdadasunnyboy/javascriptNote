@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			window.onload = function(){
+				var a = document.getElementById('btn2');
+				a.onclick = function(){
+					alert("it is ok");
+				}
+			}//window.onload页面加载完成后才加载js
+			
+		</script>
+	</head>
+	<body>
+		<button id="btn" onclick="alert('it is ok')">点击我</button>
+		<button id="btn1">点我1</button>
+		<button id="btn2">点我2</button>
+		<script>
+			var a = document.getElementById('btn1');
+			a.onclick = function(){
+				alert("it is ok");
+			}
+		</script>
+	</body>
+</html>

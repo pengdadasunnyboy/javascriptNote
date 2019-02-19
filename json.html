@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*
+			 * JSON
+			 *   -js中的对象只有js自己认识，其它语言都不认识
+			 *   -json就是一个特殊格式的字符串，这个字符串可以被任意语言所识别
+			 *     并且可以转换为任意语言中的对象，json在开发中主要用来数据交互
+			 *   -json
+			 *      -json和js格式一样，只不过json字符串中的属性名必须加双引号
+			 *      -json分类
+			 *         1对象
+			 *         2数组[]
+			 *      js中允许的值：字符串，数值，布尔值，null,对象，数组
+			 */   
+			//创建一个对象
+			var obj = '{"name":"孙悟空","age":18,"gender":"男"}';
+			var obj1 = '[1,2,3,"hello"]';
+			console.log(obj);
+			console.log(obj1);
+
+			var json = '{"name":"孙悟空","age":18,"gender":"男"}';;
+			/*
+			 *    JSON.parse
+			 *     -可以将JSON字符串转为js对象
+			 *     -它需要一个json字符串作为参数，会将改字符串转换为js对象
+			 */
+			var o = JSON.parse(json);
+		    console.log(o.age);
+			
+			var o2 = JSON.parse(obj1);
+			console.log(o2[1]);
+			
+			/*
+			 * js对象-->json
+			 * json.stringify()
+			 *   -可以将一个js对象转换为json字符串
+			 *   -需要一个js对象作为参数，会返回一个json字符串
+			 */
+			var obj3 = {name:"猪八戒",age:22,gender:"男"};
+			
+		    var str  = JSON.stringify(obj3);
+		    console.log(str);
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

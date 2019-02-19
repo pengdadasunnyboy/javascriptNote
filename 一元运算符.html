@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*
+			 * 一元运算符，只需要一个操作数
+			 * + 正好   正号不会对数字产生影响
+			 * - 负号   负号会取反  
+			 * 
+			 * 对于非Number类型的值
+			 *    会将先转换为Number再运算
+			 *    可以对一个其他的数据类型使用+，来将其转换为Number
+			 *    它的原理和Number（）函数一样
+			 */
+
+			
+			a = "18";
+			a = +a;
+			console.log(typeof a);//number
+			console.log(a);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
